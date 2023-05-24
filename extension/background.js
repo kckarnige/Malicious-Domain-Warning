@@ -8,7 +8,7 @@ function blockZipDomains() {
             id: adblockRuleID,
             priority: 1,
             condition: {
-                regexFilter: "(.*\\.zip|.*\\.mov)(.*)",
+                regexFilter: "(.*\\.zip/|.*\\.mov/)(.*)",
                 resourceTypes: ["main_frame"],
             },
             action: {
