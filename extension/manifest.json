@@ -1,12 +1,13 @@
 {
     "manifest_version": 3,
-    "name": ".ZIP Domain Warning",
+    "name": "Malicious Domain Warning",
     "version": "1.0",
-    "description": "Redirect all .zip domains to display a prompt warning about the risks of .zip domains.",
+    "description": "Redirect all malicious file domains to display a prompt warning about the risks of such domains.",
     "icons": {
       "16": "icon16.png",
       "48": "icon48.png",
-      "128": "icon128.png"
+      "128": "icon128.png",
+      "256": "icon256.png"
     },
     "background": {
       "service_worker": "background.js"

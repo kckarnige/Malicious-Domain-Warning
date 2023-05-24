@@ -7,8 +7,10 @@ document.addEventListener("DOMContentLoaded", function() {
       const blockedUrlElement = document.getElementById("blockedUrl");
       if (blockedUrlElement) {
         blockedUrlElement.textContent = blockedUrl;
+        document.body.innerHTML = document.body.innerHTML.replace(/@WEBSITESDOMAINSUFFIX@/g, "." + blockedUrlElement.innerText.split('.').slice(-1));
       }
     }
+    
   
     // Add event listener to continue button
     const continueButton = document.getElementById("continueButton");
